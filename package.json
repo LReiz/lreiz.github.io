@@ -1,0 +1,26 @@
+{
+  "name": "lreiz.github.io",
+  "version": "1.0.0",
+  "description": "> A clean, beautiful, responsive portfolio template for Software Developers!",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "dev": "live-server --port=3000 --open=./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LReiz/lreiz.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LReiz/lreiz.github.io/issues"
+  },
+  "homepage": "https://github.com/LReiz/lreiz.github.io#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

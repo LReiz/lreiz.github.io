@@ -1,3 +1,20 @@
+/* ====== Purple Space Tech Theme ====== */
+:root{
+  --bg: #0B0C10;           /* deep space */
+  --bg-2: #0F111A;         /* darker panels / nav */
+  --card: #111827;         /* cards/sections */
+  --border: #1F2937;
+
+  --text: #FFFFFF;         /* primary text */
+  --muted: #9CA3AF;        /* secondary text */
+
+  --primary-600: #9333EA;  /* main purple (headings, buttons) */
+  --primary:     #A855F7;  /* bright purple (links, accents) */
+  --primary-400: #C084FC;  /* lighter purple (hover/active) */
+
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
 .profile-pic {
   position: relative;
   max-width:130px;
