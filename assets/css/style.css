@@ -430,7 +430,7 @@ h3 {
   text-transform: uppercase;
 }
 
-#experience .card-action {
+#experience .card-action, #education .card-action {
   background-color: rgba(0, 0, 0, 0.02);
   border: none;
 }
@@ -521,6 +521,14 @@ a.hoverline:hover {
 #experience .card-content .row {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
+}
+
+#volunteer-work .card-image img,
+#projects .card-image img {
+  width: 100%;
+  height: 200px;      /* or any fixed height you like */
+  object-fit: cover;  /* crop instead of squish */
+  object-position: center; /* ensures crop is centered */
 }
 
 .card.large .card-image {
@@ -708,4 +716,51 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+}
+
+/* Compact language chips ==================================== */
+/* Container */
+.lang-chips { 
+  display:flex; 
+  flex-wrap:wrap; 
+  gap:12px; 
+  margin-top:10px;
+}
+
+/* Each chip */
+.lang-chip {
+  display:inline-flex; 
+  align-items:center; 
+  gap:12px;
+  padding:8px 16px; 
+  border-radius:999px;
+  background:#f3f4f6; 
+  border:1px solid #e5e7eb; 
+  font-size:15px; 
+  line-height:1.4;
+  font-weight:600;
+}
+
+/* Language label */
+.lang-chip .label { font-weight:700; }
+
+/* Level pill */
+.lang-chip .level {
+  padding:4px 10px; 
+  border-radius:999px; 
+  font-size:14px; 
+  font-weight:600;
+  color:#fff;
+}
+
+/* Colors by proficiency */
+.lang-chip .level.beginner { background:#29b6f6; }       /* Red */
+.lang-chip .level.intermediate { background:#3949ab; }   /* Orange */
+.lang-chip .level.fluent, 
+.lang-chip .level.advanced, 
+.lang-chip .level.native { background:#ec407a; }         /* Green */
+
+/* Dark mode optional */
+@media (prefers-color-scheme: dark) {
+  .lang-chip { background:#111827; border-color:#1f2937; color:#e5e7eb; }
 }
